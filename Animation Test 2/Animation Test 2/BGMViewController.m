@@ -30,6 +30,7 @@
 
 - (IBAction)myButtonClicked:(UIButton *)sender
 {
+	
 	CABasicAnimation* theAnimation = [CABasicAnimation animationWithKeyPath:@"opacity"];
 	theAnimation.duration=0.5;
 	theAnimation.repeatCount=2;
@@ -37,5 +38,7 @@
 	theAnimation.fromValue=[NSNumber numberWithFloat:1.0];
 	theAnimation.toValue=[NSNumber numberWithFloat:0.0];
 	[self.myView.layer addAnimation:theAnimation forKey:@"animateOpacity"];
+	 
+	
 }
 @end
